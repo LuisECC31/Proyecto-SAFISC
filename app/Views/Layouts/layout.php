@@ -10,15 +10,17 @@
 </head>
 
 <body>
-	<header>
+	<menu>
 		<?php require_once('menu.php'); ?>
-	</header>
+	</menu>
 	<div class="container-fluid">
         <div class="row">
 		<?php require_once('routes.php'); ?>
         </div>
 	</div>
-
+	<footer>
+	<?php require_once('footer.php'); ?>
+	</footer>
 </body>
 
 </html>

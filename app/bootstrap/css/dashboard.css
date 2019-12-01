@@ -113,7 +113,7 @@ body {
   }
   
   .footer {
-    background-color: #414141;
+    background-color: #ffffff;
     width: 100%;
     text-align: left;
     font-family: sans-serif;
@@ -163,7 +163,7 @@ body {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #33383b;
+    background-color: #ffffff;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;

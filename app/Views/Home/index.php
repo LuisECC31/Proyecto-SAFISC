@@ -49,9 +49,6 @@
                 paralelo a la evolución de las técnicas y metodologías gerenciales.
             </p>
           </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
@@ -63,9 +60,6 @@
               las cuales son ejecutadas con el apoyo de modernos sistemas autorizados, garantizando un desempeño óptimo y un 
               rendimiento excelente del recurso humano en un ambiente laboral adecuado y cónsono con las exigencias del puesto.
             </p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
@@ -79,9 +73,6 @@
               <li>Voluntad para hacer las cosas bien</li>
               <li>Responsabilidad</li>
             </ul>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>

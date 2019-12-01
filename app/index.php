@@ -1,7 +1,6 @@
 <?php
 /*Por medio de este archivo se accede a la aplicación*/
 require_once("Db/db.php"); //Se incluye el archivo que contiene la conexión a la BD
-
 if (isset($_GET['controller']) && isset($_GET['action'])) { // Si hay un controlador y acción (método) definido...
     $controller = $_GET['controller'];
     $action = $_GET['action'];

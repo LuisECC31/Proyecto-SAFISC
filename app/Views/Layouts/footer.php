@@ -3,16 +3,19 @@
   <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
     <p class="about">
-      <span> Sobre la organización</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
-      ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+      <span> Secretaría administrativa de la Facultad de Ingeniería de Sistemas Computacionales</span>
+      <p>
+          Lic. Marisol Cedeño
+          Secretaria administrativa
+          marisol.cedeno@utp.ac.pa
+      </p>
+      <br>
+      <p>
+          Claribel Pimentel
+          Asistente de Secretaría
+          claribel.pimentel@utp.ac.pa
+      </p>
     </p>
-    <div class="icons">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-google-plus"></i></a>
-      <a href="#"><i class="fa fa-instagram"></i></a>
-    </div>
   </div>
   <div class="footer-center col-md-4 col-sm-6">
     <div>

@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-            <a class="nav-link" href="services.html">Reporte de daño</a>
+            <a class="nav-link" href="services.html">Reportes de daños</a>
           </li>
           <li class="nav-item">
-              <button type="button" class="btn btn-outline-light" onclick="location.href='Login.html'">Iniciar Sesión</button>
+              <button type="button" class="btn btn-outline-light" onclick="location.href='Views/Login/index.php'">Iniciar Sesión</button>
             </li>
           </ul>
       </div>

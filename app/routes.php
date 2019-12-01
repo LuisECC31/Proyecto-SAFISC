@@ -1,10 +1,15 @@
 <?php
 
 
+class routes {
+	const routes="/PROYECTO-SAFISC";
+}
+
 $controllers = array(
     'Home' => ['index'],
     'Docente' => ['index', 'add', 'save'],
-    'Administrativo' => ['index']
+    'Administrativo' => ['index'],
+    'Login' => ['index']
 );
 
 if (array_key_exists($controller, $controllers)) {
@@ -33,6 +38,9 @@ function call($controller, $action)
         case 'Administrativo':
             $controller = new AdministrativoController();
             break;
+        case 'Login':
+            $controller = new LoginController();
+
         default:
             # código...
             break;

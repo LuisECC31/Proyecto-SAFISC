@@ -1,46 +1,47 @@
 
-  <!-- Footer -->
-  <footer class="footer">
-  <div class="footer-left col-md-4 col-sm-6">
-    <p class="about">
-      <span> Secretaría administrativa de la Facultad de Ingeniería de Sistemas Computacionales</span>
-      <p>
-          Lic. Marisol Cedeño
-          Secretaria administrativa
-          marisol.cedeno@utp.ac.pa
-      </p>
-      <br>
-      <p>
-          Claribel Pimentel
-          Asistente de Secretaría
-          claribel.pimentel@utp.ac.pa
-      </p>
-    </p>
-  </div>
-  <div class="footer-center col-md-4 col-sm-6">
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span> Street name and number</span> City, Country</p>
+<footer class="page-footer font-small cyan darken-3">
+<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link href="bootstrap/css/dashboard.css" rel="stylesheet">
+  
+<!-- Footer Elements -->
+<div class="container">
+
+  <!-- Grid row-->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-md-12 py-5">
+      <div class="mb-5 flex-center">
+
+        <!-- Facebook -->
+        <a class="fb-ic">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic">
+          <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic">
+          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+      </div>
     </div>
-    <div>
-      <i class="fa fa-phone"></i>
-      <p> (+00) 0000 000 000</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="#"> office@company.com</a></p>
-    </div>
+    <!-- Grid column -->
+
   </div>
-  <div class="footer-right col-md-4 col-sm-6">
-    <h2> Company<span> logo</span></h2>
-    <p class="menu">
-      <a href="#"> Home</a> |
-      <a href="#"> About</a> |
-      <a href="#"> Services</a> |
-      <a href="#"> Portfolio</a> |
-      <a href="#"> News</a> |
-      <a href="#"> Contact</a>
-    </p>
-    <p class="name"> Company Name &copy; 2016</p>
-  </div>
+  <!-- Grid row-->
+
+</div>
+<!-- Footer Elements -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2018 Copyright:
+  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+
 </footer>
+<!-- Footer -->

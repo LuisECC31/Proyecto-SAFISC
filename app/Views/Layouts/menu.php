@@ -11,7 +11,7 @@
             <a class="nav-link" href="services.html">Reportes de daños</a>
           </li>
           <li class="nav-item">
-              <button type="button" class="btn btn-outline-light" onclick="location.href='Views/Login/index.php'">Iniciar Sesión</button>
+              <button type="button" class="btn btn-outline-light" onclick="location.href='?controller=Login&&action=index'">Iniciar Sesión</button>
             </li>
           </ul>
       </div>

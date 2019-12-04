@@ -1,11 +1,12 @@
 <?php
-require 'Db/db.php';
+
 class LoginConsultaModel {
     
     private $lista;
     
-    public function _construct(){
-        $this->lista=array();
+    public function __construct(){
+        $this->db = Conexion::conectar();
+        $this->docentes = array();
     }
     
     public function login($Usuario,$contraseña){

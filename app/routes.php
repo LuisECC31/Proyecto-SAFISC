@@ -1,15 +1,13 @@
 <?php
 
 
-class routes {
-	const routes="/PROYECTO-SAFISC";
-}
+
 
 $controllers = array(
     'Home' => ['index'],
     'Docente' => ['index', 'add', 'save'],
     'Administrativo' => ['index'],
-    'Login' => ['index']
+    'Login' => ['index','login']
 );
 
 if (array_key_exists($controller, $controllers)) {

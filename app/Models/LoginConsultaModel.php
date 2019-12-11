@@ -1,5 +1,4 @@
 <?php
-
 class LoginConsultaModel {
     
     private $lista;
@@ -9,13 +8,12 @@ class LoginConsultaModel {
         $this->docentes = array();
     }
     
-    public function login($Usuario,$contraseña){
-        $query=mysqli_query(Conexion::con(), "call login('$Usuario','$contraseña')");
-      while ($row=mysqli_fetch_array($query)){
-          $this->lista[]=$row;
-      }
-      return $this->lista;
+    public function login(){
+        $consulta = $this->db->query("select * from Usuarios;");
+        while($registros = $consulta->fetch_assoc()){
+            $this->lista[] = $row;
+        }
+        return $this->lista;
     }
-    
-    
-}
+    }
+?>

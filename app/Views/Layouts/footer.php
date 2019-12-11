@@ -1,47 +1,17 @@
-
 <footer class="page-footer font-small cyan darken-3">
 <meta charset="utf-8">
+  <link href="css/modern-business.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link href="bootstrap/css/dashboard.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
   
-<!-- Footer Elements -->
-<div class="container">
 
-  <!-- Grid row-->
-  <div class="row">
-
-    <!-- Grid column -->
-    <div class="col-md-12 py-5">
-      <div class="mb-5 flex-center">
-
-        <!-- Facebook -->
-        <a class="fb-ic">
-          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-        </a>
-        <!-- Twitter -->
-        <a class="tw-ic">
-          <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-        </a>
-        <!--Instagram-->
-        <a class="ins-ic">
-          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-        </a>
-      </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">SAFI &copy;Website 2019</p>
     </div>
-    <!-- Grid column -->
-
-  </div>
-  <!-- Grid row-->
-
-</div>
-<!-- Footer Elements -->
-
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2018 Copyright:
-  <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-</div>
-<!-- Copyright -->
-
-</footer>
+    <!-- /.container -->
+  </footer>
 <!-- Footer -->

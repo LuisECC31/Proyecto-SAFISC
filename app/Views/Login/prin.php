@@ -1,5 +1,6 @@
 <?php 
         session_start();
+        $Usuario = $_SESSION ['Usuario'];
  ?>
 <!DOCTYPE html>
 <!--

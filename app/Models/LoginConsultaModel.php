@@ -1,4 +1,5 @@
 <?php
+require_once("Db/db.php");
 class LoginConsultaModel {
     
     private $lista;
@@ -9,7 +10,7 @@ class LoginConsultaModel {
     }
     
     public function login(){
-        $consulta = $this->db->query("select * from Usuarios;");
+        $consulta = $this->db->query("select COUNT(*) from Usuarios where Usuario = '$Usuario' and password = '$password'");
         while($registros = $consulta->fetch_assoc()){
             $this->lista[] = $row;
         }

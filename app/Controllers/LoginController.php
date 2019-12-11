@@ -19,13 +19,12 @@ class LoginController{
             require_once('Models/LoginConsultaModel.php');
             $rob=new LoginConsultaModel();
             $Iniciar=$rob->login();
-            if($Iniciar['contar']>0){
+            if($Iniciar>0){
                 $Usuario = $_SESSION ['Usuario'];
                 header("location:/Views/Login/prin.php");
             }
             else{
-                echo("no");
-            }
+                header("location:/Views/Login/prin.php");            }
         
     }
 }

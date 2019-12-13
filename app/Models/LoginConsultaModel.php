@@ -9,14 +9,14 @@ class LoginConsultaModel {
         $this->db = Conexion::conectar();
         $this->Usuarios = array();
     }
-    public function login($Usuario,$password){
+    public function login($Usuario, $password)
+    {
+        $passwordmd5 = MD5($password);
+        $consulta = $this->db->query("SELECT COUNT(*) as cuenta from Usuarios WHERE Usuario='$Usuario' AND password='$passwordmd5' ;");
 
-        $passwordmd5= MD5($password);
-        $consulta = $this->db->query("SELECT COUNT(*) from Usuario WHERE Usuario='$Usuario' AND Contraseña='$passwordmd5' ;");
-        while($registros = $consulta->fetch_assoc()){
-            $this->Usuarios[] = $registros;
-        }
-        return $this->Usuarios;
+        $resultado = $consulta->fetch_assoc();
+        $conteo = $resultado['cuenta'];
+        return $conteo;
     }
     }
 ?>

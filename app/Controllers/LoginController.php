@@ -20,14 +20,14 @@ class LoginController{
             $password=$_POST['Contraseña'];
             
             $LoginUser= new LoginConsultaModel();
-            $datos = $LoginUser->login();
+            $datos = $LoginUser->login($Usuario,$password);
 
             if($datos>0){
                 header("location:/Views/Login/prin.php");
                 
             }
             else{
-                      echo "Ese no es";  
+                header("location:/Views/Home/index.php");
                 }
         
         

@@ -1,4 +1,5 @@
 <?php
+require_once("Db/db.php");
 class LoginConsultaModel {
     
     private $db;
@@ -9,7 +10,9 @@ class LoginConsultaModel {
         $this->Usuarios = array();
     }
     public function login($Usuario,$password){
-        $consulta = $this->db->query("SELECT COUNT(*) from Usuario WHERE Usuario='$Usuario' AND Contraseña='$password' ;");
+
+        $passwordmd5= MD5($password);
+        $consulta = $this->db->query("SELECT COUNT(*) from Usuario WHERE Usuario='$Usuario' AND Contraseña='$passwordmd5' ;");
         while($registros = $consulta->fetch_assoc()){
             $this->Usuarios[] = $registros;
         }

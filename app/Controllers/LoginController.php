@@ -1,5 +1,8 @@
 <?php
 session_start();
+ob_start();
+
+require_once('Models/LoginConsultaModel.php');
 class LoginController{
 
         function __construct()
@@ -13,18 +16,20 @@ class LoginController{
 
         function login(){
 
-            $Usuario=$_POST["Usuario"];
-            $password=$_POST["Contraseña"];
+            $Usuario=$_POST['Usuario'];
+            $password=$_POST['Contraseña'];
+            
+            $LoginUser= new LoginConsultaModel();
+            $datos = $LoginUser->login($Usuario,$password);
 
-            require_once('Models/LoginConsultaModel.php');
-            $rob=new LoginConsultaModel();
-            $Iniciar=$rob->login();
-            if($Iniciar>0){
-                $Usuario = $_SESSION ['Usuario'];
+            if($datos>0){
                 header("location:/Views/Login/prin.php");
+                
             }
             else{
-                header("location:/Views/Login/prin.php");            }
+                      echo "Ese no es";  
+                }
+        
         
     }
 }

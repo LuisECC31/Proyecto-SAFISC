@@ -1,3 +1,6 @@
+<?php 
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,15 +14,17 @@
 
 <body>
 	<menu>
-		<?php require_once('menu.php'); ?>
+		<?php require_once('menu.php');?>
 	</menu>
+
 	<div class="container-fluid">
         <div class="row">
-		<?php require_once('routes.php'); ?>
+			<?php require_once('routes.php');?>
         </div>
 	</div>
+	
 	<footer>
-	<?php require_once('footer.php'); ?>
+		<?php require_once('footer.php');?>
 	</footer>
 </body>
 

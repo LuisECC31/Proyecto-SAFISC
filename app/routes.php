@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],

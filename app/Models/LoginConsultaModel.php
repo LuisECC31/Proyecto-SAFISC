@@ -1,20 +1,19 @@
 <?php
-require_once("Db/db.php");
 class LoginConsultaModel {
     
-    private $lista;
+    private $db;
+    private $Usuarios;
     
     public function __construct(){
         $this->db = Conexion::conectar();
-        $this->docentes = array();
+        $this->Usuarios = array();
     }
-    
-    public function login(){
-        $consulta = $this->db->query("select COUNT(*) from Usuarios where Usuario = '$Usuario' and password = '$password'");
+    public function login($Usuario,$password){
+        $consulta = $this->db->query("SELECT COUNT(*) from Usuario WHERE Usuario='$Usuario' AND Contraseña='$password' ;");
         while($registros = $consulta->fetch_assoc()){
-            $this->lista[] = $row;
+            $this->Usuarios[] = $registros;
         }
-        return $this->lista;
+        return $this->Usuarios;
     }
     }
 ?>

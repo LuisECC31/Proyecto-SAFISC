@@ -3,11 +3,11 @@ require_once("Db/db.php");
 class LoginConsultaModel {
     
     private $db;
-    private $Usuarios;
+  
     
     public function __construct(){
         $this->db = Conexion::conectar();
-        $this->Usuarios = array();
+        
     }
     public function login($Usuario, $password)
     {

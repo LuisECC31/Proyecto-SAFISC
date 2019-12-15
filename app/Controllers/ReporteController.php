@@ -31,6 +31,7 @@ class ReporteController
 		if($datos === TRUE){
 			
 			header("location:/Views/Crear_Reportes/princ.php");
+			exit();
 		}
 
 		else{
@@ -40,4 +41,6 @@ class ReporteController
 	
 	}
 }
+mysqli_close($connection);
+
 ?>

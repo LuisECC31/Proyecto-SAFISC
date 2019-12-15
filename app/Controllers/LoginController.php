@@ -13,6 +13,7 @@ class LoginController{
         function index(){
 		require_once('Views/Login/index.php');
         }
+        
 
         function login(){
 

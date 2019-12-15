@@ -29,7 +29,7 @@
 
                     <label for="Descripcion_del_dano" class="col-md-4 col-form-label">Tipo del daño:</label>
                     <div class="col-md-8">
-                    <select>
+                    <select name="Tipo_de_Dano">
                         <?php 
                             foreach($datos as $dato) {
 						if($selid==$dato['Tipo_de_Dano']) {
@@ -44,7 +44,7 @@
 
                     <label for="Descripcion_del_dano" class="col-md-4 col-form-label">Ubicación:</label>
                     <div class="col-md-8">
-                    <select>
+                    <select name="Lugar">
                         <?php 
                             foreach($datos2 as $dato) {
 						if($selid==$dato['Lugar']) {

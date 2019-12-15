@@ -3,7 +3,7 @@
 $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],
-    'Reporte'=> ['index']
+    'Reporte'=> ['index','reporte']
 );
 
 if (array_key_exists($controller, $controllers)) {

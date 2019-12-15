@@ -3,7 +3,7 @@ require_once("Db/db.php");
 class LoginConsultaModel {
     
     private $db;
-  
+
     
     public function __construct(){
         $this->db = Conexion::conectar();

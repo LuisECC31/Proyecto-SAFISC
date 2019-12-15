@@ -1,18 +1,4 @@
-<?php
-session_start(); 
 
-require_once('Cotrollers/LoginController.php');
-if(isset($_SESSION['valida']) == TRUE) 
-{ 
-       
-} 
-else 
-{   
-
-       echo "No tienes permiso para entrar a esta pagina"; 
-       exit(); 
-}  
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

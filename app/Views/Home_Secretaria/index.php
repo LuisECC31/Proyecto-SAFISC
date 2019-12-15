@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,35 +17,41 @@
                 <nav id="sidebar">
                     <br><br><br>
                     <ul class="list-unstyled components">
-                    <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Reportes</a>
-                        <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
-                        </li>
+                            <li class="active">
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Usuarios</a>
+                                <ul class="collapse list-unstyled" id="homeSubmenu">
+                                    <li>
+                                        <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                    
+                            <li class="active">
+                                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Usuarios</a>
+                                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                                        <li>
+                                            <a href='/?controller=Usuario&&action=index'>Ver Usuarios</a>
+                                        </li>
+                                        <li>
+                                            <a href='/?controller=Usuario&&action=index2'>Añadir Usuarios</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Eliminar Usuarios</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                    
+
+                            <li class="active">
+                                <a href="#">Cerrar Sesión</a>
+                            </li>
+                        
+                            <li class="active">
+                                <a href="#">Contacto para asistencia</a>
+                            </li>
                     </ul>
-                    </li>
-                    <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Usuarios</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href='/?controller=Usuario&&action=index'>Ver Usuarios</a>
-                        </li>
-                        <li>
-                            <a href='/?controller=Usuario&&action=index2'>Añadir Usuarios</a>
-                        </li>
-                        <li>
-                            <a href="#">Eliminar Usuarios</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li>
-                        <a href="#">Cerrar Sesión</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacto para asistencia</a>
-                    </li>
-                    </ul>
+                    
                 </nav>
             </div>
         </div>

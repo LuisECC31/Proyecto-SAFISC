@@ -4,7 +4,8 @@ $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],
     'Secretaria' => ['index'],
-    'Reporte'=> ['index','index2','reporte']
+    'Reporte'=> ['index','index2','reporte'],
+    'Usuario'=> ['index','index2','mostrar','add']
 );
 
 if (array_key_exists($controller, $controllers)) {
@@ -34,6 +35,9 @@ function call($controller, $action)
             break;
         case 'Reporte':
             $controller = new ReporteController();
+            break;
+        case 'Usuario':
+            $controller = new UsuarioController();
             break;
 
         default:

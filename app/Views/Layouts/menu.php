@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color: #33234A;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark "  style="background-color: #33234A;">
     <div class="container ">
       <a class="navbar-brand" href="?controller=Home&&action=index">SAFISC</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" 

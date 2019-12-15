@@ -85,6 +85,7 @@ body {
    */
   
   .navbar-brand {
+    
     padding-top: .75rem;
     padding-bottom: .75rem;
     font-size: 1rem;
@@ -105,7 +106,6 @@ body {
   }
   
   .form-control-dark:focus {
-    border-color: transparent;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
   }
   label.col-md-4.col-form-label{
@@ -119,9 +119,9 @@ body {
     bottom: 0;
     height: auto;
     width: auto;
-    background-color: black;
+    background-color: rgb(165, 165, 165);
     position: relative;
-    margin-bottom: 6rem;
+    
   }
   
   

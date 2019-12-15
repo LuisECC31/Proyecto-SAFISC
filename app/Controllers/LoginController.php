@@ -24,6 +24,7 @@ class LoginController{
             $datos = $LoginUser->login($Usuario,$password);
 
             if($datos>0){
+                $_SESSION['valida'] = TRUE;
                 header("location:?controller=Secretaria&&action=index");
                 die();
                 

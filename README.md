@@ -7,7 +7,7 @@ Integrantes del Equipo:
 4. Cardoze, Luis (8-940-1614)
 5. López, Derek (8-936-1395)
 
-##Descripción del Proyecto:
+## Descripción del Proyecto:
 
 La secretaría administrativa de la Facultad de Ingeniaría de Sistemas Computacionales de la Universidad Tecnológica de Panamá es la responsable de los recursos de la facultad y un sin fin deactividades para el buen funcionamiento de la facultad como el es caso del reporte y seguimiento de los daños.
 

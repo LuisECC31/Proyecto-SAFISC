@@ -10,9 +10,7 @@
                     <li class="nav-item">
                     <button type="button" class="btn btn-outline-light" onclick="location.href='?controller=Reporte&&action=index'">Reporte de Daños</button>
           </li>
-          <li class="nav-item">
-              <button type="button" class="btn btn-outline-light" onclick="location.href='?controller=Login&&action=index'">Iniciar Sesión</button>
-            </li>
+          
           </ul>
       </div>
     </div>

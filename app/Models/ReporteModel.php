@@ -26,18 +26,17 @@ class ReporteModel {
         return $this->ubicacion;
     }
 
-    public function reporte($Solicitante,$Cedula,$Descripcion){
-        $consulta = "INSERT INTO Reportes_de_dano (`Solicitante`,`Cedula`,`Descripcion_del_dano`)
-                     VALUES  ($Solicitante,$Cedula,$Descripcion,$Tipo_de_Dano,$Lugar)";                                
-       $result = $this->db->query($consulta); 
-       if($result ==TRUE)	
-       
+    public function reporte($Solicitante,$Cedula,$Descripcion,$Tipo_de_Dano,$Lugar){
+        $consulta = $this->db->query("INSERT INTO Reportes_de_dano (`Solicitante`,`Cedula`,`Descripcion_del_dano`,`Tipo_de_Dano`,`Lugar`)
+                                      VALUES  ('$Solicitante','$Cedula','$Descripcion','$Tipo_de_Dano','$Lugar');");                                
+       $result = $consulta; 
+       if($result === TRUE)	
            {
-               return $resultado = TRUE;
+               return $datos = TRUE;
            }
         else
            {
-               return $resultado = FALSE;
+               return $datos = FALSE;
            }
     }
 }

@@ -28,7 +28,7 @@ class ReporteController
 		$CrearReporte= new ReporteModel();
 		$datos = $CrearReporte->reporte($Solicitante,$Cedula,$Descripcion,$Tipo_de_Dano,$Lugar);
 
-		if($resultado==TRUE){
+		if($datos === TRUE){
 			
 			header("location:/Views/Crear_Reportes/princ.php");
 		}

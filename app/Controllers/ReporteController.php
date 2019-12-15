@@ -17,6 +17,12 @@ class ReporteController
 		require_once('Views/Crear_Reportes/index.php');
 	}
 
+	function index2(){
+		$Mostrar = new ReporteModel();
+		$datos = $Mostrar->listar();
+		require_once('Views/Home_Secretaria/MostrarReporte/index.php');
+	}
+
 	function reporte(){
 
 		$Solicitante=$_POST['Solicitante'];
@@ -41,6 +47,5 @@ class ReporteController
 	
 	}
 }
-mysqli_close($connection);
 
 ?>

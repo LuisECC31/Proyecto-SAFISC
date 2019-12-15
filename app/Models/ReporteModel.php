@@ -4,10 +4,13 @@ class ReporteModel {
     private $db;
     private $dano;
     private $ubicacion;
+    private $Mostrar;
     
     public function __construct(){
         $this->db = Conexion::conectar();
         $this->dano = array();
+        $this->ubicacion = array();
+        $this->Mostrar = array();
     }
 
     public function listardano(){
@@ -38,6 +41,14 @@ class ReporteModel {
            {
                return $datos = FALSE;
            }
+    }
+
+    public function listar(){
+        $consulta = $this->db->query("SELECT Solicitante,Cedula,Descripcion_del_dano,Tipo_de_Dano,Lugar FROM Reportes_de_dano;");
+        while($filas = $consulta->fetch_assoc()){
+            $this->Mostrar[] = $filas;
+        }
+        return $this->Mostrar;
     }
 }
 

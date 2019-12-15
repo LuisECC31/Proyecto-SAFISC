@@ -24,7 +24,8 @@ class LoginController{
             $datos = $LoginUser->login($Usuario,$password);
 
             if($datos>0){
-                header("location:/Views/Login/prin.php");
+                header("location:?controller=Secretaria&&action=index");
+                die();
                 
             }
             else{

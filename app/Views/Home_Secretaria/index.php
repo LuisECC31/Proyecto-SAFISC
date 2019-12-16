@@ -26,6 +26,13 @@
                                     <li>
                                         <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
                                     </li>
+                                    
+                                    <li>
+                                        <a href='?controller=Reporte&&action=index6'> Añadir tipos de daño</a>
+                                    </li>
+                                    <li>
+                                        <a href='/?controller=Reporte&&action=index7'> Añadir Ubicación</a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -56,7 +63,7 @@
             </div>
         </div>
 
-        <div class="col-md-7 lg-7">
+        <div class="col-md-9 lg-9">
       <div class="container">
        <div class="card">
             <br><br>

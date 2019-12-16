@@ -29,6 +29,34 @@ class ReporteModel {
         return $this->ubicacion;
     }
 
+    public function Anadirdanos($Tipodedano){
+        $consulta = $this->db->query("INSERT INTO Tipo_de_Dano (`Tipo_de_Dano`)
+                                      VALUES  ('$Tipodedano');"); 
+        $result = $consulta; 
+       if($result === TRUE)	
+           {
+               return $datos = TRUE;
+           }
+        else
+           {
+               return $datos = FALSE;
+           }
+    }
+
+    public function Anadirubicaciones($ubicacion){
+        $consulta = $this->db->query("INSERT INTO Ubicaciones (`Lugar`)
+                                      VALUES  ('$ubicacion');"); 
+        $result = $consulta; 
+       if($result === TRUE)	
+           {
+               return $datos = TRUE;
+           }
+        else
+           {
+               return $datos = FALSE;
+           }
+    }
+
     public function delete($Id_reporte){
         $consulta = $this->db->query("DELETE FROM Reportes_de_dano WHERE idReportes_de_dano = $Id_reporte;");
         $result = $consulta; 

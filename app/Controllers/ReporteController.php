@@ -40,6 +40,27 @@ class ReporteController
 		require_once('Views/Home_Secretaria/Crear_Reportes/princ.php'); 
 	}
 
+	function index6(){
+
+		require_once('Views/Home_Secretaria/Administración de Categorías/Añadir tipos de daño/index.php');
+	}
+
+	function index7(){
+
+		require_once('Views/Home_Secretaria/Administración de Categorías/Añadir Ubicaciones/index.php');
+	}
+
+	function index8(){
+
+		require_once('Views/Home_Secretaria/Administración de Categorías/Añadir tipos de daño/princ.php');
+	}
+
+	function index9(){
+
+		require_once('Views/Home_Secretaria/Administración de Categorías/Añadir Ubicaciones/princ.php');
+	}
+
+
 	function eliminar(){
 		$delete_Reporte_id=$_POST['idReportes_de_dano'];
 
@@ -55,6 +76,44 @@ class ReporteController
 		else{
 			echo"location:/Views/Home/index.php";
 			}
+	}
+	
+	function Anadirdano(){
+
+		$Tipodedano=$_POST['Tipodedano'];
+		$dano= new ReporteModel();
+		$datos = $dano->Anadirdanos($Tipodedano);
+
+		if($datos === TRUE){
+			
+			header("location:?controller=Reporte&&action=index8");
+			exit();
+		}
+
+		else{
+			echo"location:?controller=Secretaria&&action=index";
+			}
+	
+	
+	}
+	function Anadirubicacion(){
+
+		$ubicacion=$_POST['ubicacion'];
+
+		$lugar= new ReporteModel();
+		$datos = $lugar->Anadirubicaciones($ubicacion);
+
+		if($datos === TRUE){
+			
+			header("location:?controller=Reporte&&action=index9");
+			exit();
+		}
+
+		else{
+			echo"location:?controller=Secretaria&&action=index";
+			}
+	
+	
 	}
 
 	function reporte(){

@@ -2,7 +2,7 @@
 
 Integrantes del Equipo:
 1. Aizprúa, Ana Gabriela (8-950-1532)
-2. Apu, Richard (8-000-000)
+2. Apu, Richard (8-938-1634)
 3. Bosquez, Karina (8-942-2155)
 4. Cardoze, Luis (8-940-1614)
 5. López, Derek (8-936-1395)

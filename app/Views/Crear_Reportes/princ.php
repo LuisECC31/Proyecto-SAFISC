@@ -18,11 +18,12 @@
       <div class="card text-center">
         <div class="card-body">
           <h5 class="card-title">Reporte realizado y enviado con exito</h5><br>
-          <a href="#" class="btn btn-primary">Realizar Otro Reporte</a>
-          <a href="#" class="btn btn-primary">Volver a inicio</a>
+          <a href="/Views/Crear_Reportes/index.php" class="btn btn-primary">Realizar Otro Reporte</a>
+          <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Secretaria&&action=index'">Volver a inicio</a>
         </div>
       </div>
     </div>
     </div>
 </body>
 </html>
+

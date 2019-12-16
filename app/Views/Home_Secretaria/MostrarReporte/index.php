@@ -4,14 +4,16 @@
         <meta charset="UTF-8">
         <title></title>
     </head>
-<body>
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-<button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Secretaria&&action=index'">Regresar</button>
+
+
     
-        <h2 class="mt-2">Reportes de daño</h2>
-        <div class="table-responsive">
+<body>
+<main role="main" class="col-md-9 ml-sm-auto col-lg-12 px-4">
+<div class="card-header .bg-light text-dark" >
+       <center><h2 class="mt-2">Reportes de daño</h2></div></center>
+        <div class="table-responsive-md">
         <table class="table table-striped table-sm table-hover">
-            <thead>
+        <thead class="thead-dark">
                 <tr>
                     <th>ID</th>
                     <th>Solicitante</th>
@@ -41,6 +43,13 @@
             ?>
             </tbody>
         </table>
+        </div>
+        <div class="col-lg-12">
+        <div class="form-group row ">
+        <div class="col-md-8">
+        <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Secretaria&&action=index'">Regresar</button>
+        </div>
+        </div>
         </div>
     </form>
 

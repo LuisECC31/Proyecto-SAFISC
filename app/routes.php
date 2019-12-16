@@ -5,7 +5,7 @@ $controllers = array(
     'Login' => ['index','login'],
     'Secretaria' => ['index'],
     'Reporte'=> ['index','index2','reporte','eliminar'],
-    'Usuario'=> ['index','index2','mostrar','add']
+    'Usuario'=> ['index','index2','mostrar','add','eliminar']
 );
 
 if (array_key_exists($controller, $controllers)) {

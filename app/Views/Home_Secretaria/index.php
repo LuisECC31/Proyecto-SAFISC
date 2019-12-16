@@ -18,7 +18,7 @@
                     <br><br><br>
                     <ul class="list-unstyled components">
                             <li class="active">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Usuarios</a>
+                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Reportes</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
                                         <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
@@ -35,9 +35,6 @@
                                         </li>
                                         <li>
                                             <a href='/?controller=Usuario&&action=index2'>Añadir Usuarios</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Eliminar Usuarios</a>
                                         </li>
                                     </ul>
                             </li>

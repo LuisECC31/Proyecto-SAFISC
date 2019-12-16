@@ -12,22 +12,29 @@
         <table class="table table-striped table-sm table-hover">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Usuario</th>
                     <th>Nombre del usuario</th>
                     <th>Apellido del usuario</th>
                     <th>Nombre del Rol</th>
                     <th>Permiso del usuario</th>
+                    <th>Opción</th>
                 </tr>
             </thead>
             <tbody>
             <?php
                 foreach ($datos as $dato) { ?>
                     <tr>
+                        <td><?php echo $dato["idUsuarios"] ?></td>
                         <td><?php echo $dato["Usuario"] ?></td>
                         <td><?php echo $dato["Nombre1"] ?></td>
                         <td><?php echo $dato["Apellido"] ?></td>
                         <td><?php echo $dato["Nombre2"] ?></td>
-                        <td><?php echo $dato["Nombre3"] ?></td>                    
+                        <td><?php echo $dato["Nombre3"] ?></td>
+                        <form action="?controller=Usuario&&action=eliminar" method="POST">
+                        <input type="hidden" name="idUsuarios" value=<?php echo $dato["idUsuarios"]?> >
+                        <td><button type='submit' class="btn btn-outline-dark"><img type="image" src="/Imagenes/trashcan.png" width="25px" height="25px"/></button></td>
+                        </form>                  
                     </tr>
                     <?php }
             ?>

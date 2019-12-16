@@ -19,7 +19,7 @@ class UsuarioModel{
     }
 
     public function mostrar(){
-        $consulta = $this->db->query("SELECT Usuario,u1.Nombre as Nombre1,Apellido,r2.NombreR as Nombre2
+        $consulta = $this->db->query("SELECT u1.idUsuarios,Usuario,u1.Nombre as Nombre1,Apellido,r2.NombreR as Nombre2
         ,p2.NombreP as Nombre3 FROM Usuarios u1
         INNER JOIN Roles r2 
         ON u1.NombreR=r2.NombreR
@@ -31,6 +31,19 @@ class UsuarioModel{
             $this->Mostrar[] = $registros;
         }
         return $this->Mostrar;
+    }
+
+    public function delete($idUsuarios){
+        $consulta = $this->db->query("DELETE FROM Usuarios WHERE idUsuarios = $idUsuarios;");
+        $result = $consulta; 
+       if($result === TRUE)	
+           {
+               return $datos = TRUE;
+           }
+        else
+           {
+               return $datos = FALSE;
+           }
     }
 
 

@@ -21,6 +21,9 @@
                                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Reportes</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
+                                        <a href='?controller=Reporte&&action=index4'> Crear Reporte</a>
+                                    </li>
+                                    <li>
                                         <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
                                     </li>
                                 </ul>

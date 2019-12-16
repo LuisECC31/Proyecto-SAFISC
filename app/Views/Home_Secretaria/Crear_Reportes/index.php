@@ -12,7 +12,7 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
   <div class="card-header bg-primary col-md-10 text-white" >
     <h2 class="mt-2">Crear Reporte</h2> </div>
-    <form action="?controller=Reporte&&action=reporte" method="POST">
+    <form action="?controller=Reporte&&action=reporte2" method="POST">
     <div class="card col-md-10">
         
     <div class="card-body">
@@ -20,7 +20,7 @@
             <div class="col-md-12">
             <form>
                 <div class="form-group row">
-                    <label for="Solicitante" class="col-md-3 col-form-label right">Solicitante:</label>
+                    <label for="Solicitante" class="col-md-3 col-form-label right">Solicitante: </label>
                     <div class="col-md-8">
                         <td><input type="text" class="form-control form-control-sm" name="Solicitante" value="" size="30" placeholder="Nombre Completo" required/></td>
                     </div></div>

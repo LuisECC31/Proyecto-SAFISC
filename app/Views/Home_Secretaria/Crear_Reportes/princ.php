@@ -18,8 +18,8 @@
       <div class="card text-center">
         <div class="card-body">
           <h5 class="card-title">Reporte realizado y enviado con exito</h5><br>
-          <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Reporte&&action=index'">Realizar otro reporte</a>
-          <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Home&&action=index'">Volver a inicio</a>
+          <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Reporte&&action=index4'">Realizar otro reporte</a>
+          <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Secretaria&&action=index'">Volver a inicio</a>
         </div>
       </div>
     </div>

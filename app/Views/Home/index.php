@@ -20,6 +20,7 @@
   <header>
     <div clas="row">
       <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Login&&action=index'">Iniciar Sesión</button>
+      <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Reporte&&action=index'">Reporte de Daños</button>
       <img alt="Responsive image" class="img-fluid rounded" src="Imagenes/logo.jpeg">
     </div>
     <div class="row">

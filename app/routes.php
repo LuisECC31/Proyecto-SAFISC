@@ -4,7 +4,7 @@ $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],
     'Secretaria' => ['index'],
-    'Reporte'=> ['index','index2','reporte'],
+    'Reporte'=> ['index','index2','reporte','eliminar'],
     'Usuario'=> ['index','index2','mostrar','add']
 );
 

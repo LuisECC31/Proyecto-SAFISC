@@ -23,6 +23,23 @@ class ReporteController
 		require_once('Views/Home_Secretaria/MostrarReporte/index.php');
 	}
 
+	function eliminar(){
+		$delete_Reporte_id=$_POST['idReportes_de_dano'];
+
+		$Mostrar = new ReporteModel();
+		$datos2 = $Mostrar->delete($delete_Reporte_id);
+		
+		if($datos2 === TRUE){
+			
+			header("location:?controller=Reporte&&action=index2");
+			exit();
+		}
+
+		else{
+			echo"location:/Views/Home/index.php";
+			}
+	}
+
 	function reporte(){
 
 		$Solicitante=$_POST['Solicitante'];

@@ -29,6 +29,19 @@ class ReporteModel {
         return $this->ubicacion;
     }
 
+    public function delete($Id_reporte){
+        $consulta = $this->db->query("DELETE FROM Reportes_de_dano WHERE idReportes_de_dano = $Id_reporte;");
+        $result = $consulta; 
+       if($result === TRUE)	
+           {
+               return $datos = TRUE;
+           }
+        else
+           {
+               return $datos = FALSE;
+           }
+    }
+
     public function reporte($Solicitante,$Cedula,$Descripcion,$Tipo_de_Dano,$Lugar){
         $consulta = $this->db->query("INSERT INTO Reportes_de_dano (`Solicitante`,`Cedula`,`Descripcion_del_dano`,`Tipo_de_Dano`,`Lugar`)
                                       VALUES  ('$Solicitante','$Cedula','$Descripcion','$Tipo_de_Dano','$Lugar');");                                
@@ -44,7 +57,7 @@ class ReporteModel {
     }
 
     public function listar(){
-        $consulta = $this->db->query("SELECT Solicitante,Cedula,Descripcion_del_dano,Tipo_de_Dano,Lugar FROM Reportes_de_dano;");
+        $consulta = $this->db->query("SELECT idReportes_de_dano,Solicitante,Cedula,Descripcion_del_dano,Tipo_de_Dano,Lugar FROM Reportes_de_dano;");
         while($filas = $consulta->fetch_assoc()){
             $this->Mostrar[] = $filas;
         }

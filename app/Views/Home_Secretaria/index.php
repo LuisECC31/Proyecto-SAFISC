@@ -41,7 +41,7 @@
                     
 
                             <li class="active">
-                                <a href="#">Cerrar Sesión</a>
+                                <a href='/?controller=Logout&&action=logout'>Cerrar Sesión</a>
                             </li>
                         
                             <li class="active">

@@ -5,7 +5,8 @@ $controllers = array(
     'Login' => ['index','login'],
     'Secretaria' => ['index'],
     'Reporte'=> ['index','index2','reporte','eliminar'],
-    'Usuario'=> ['index','index2','mostrar','add','eliminar']
+    'Usuario'=> ['index','index2','mostrar','add','eliminar'],
+    'Logout'=> ['logout']
 );
 
 if (array_key_exists($controller, $controllers)) {
@@ -39,6 +40,10 @@ function call($controller, $action)
         case 'Usuario':
             $controller = new UsuarioController();
             break;
+        case 'Logout':
+            $controller = new LogoutController();
+            break;
+
 
         default:
             # código...

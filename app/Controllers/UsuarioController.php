@@ -38,6 +38,7 @@ class UsuarioController
 			}
 	}
 
+
 	function add(){
 
 		$Usuario=$_POST['Usuario'];

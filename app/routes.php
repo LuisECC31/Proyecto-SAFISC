@@ -4,7 +4,9 @@ $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],
     'Secretaria' => ['index'],
+    'Mantenimiento' => ['index'],
     'Reporte'=> ['index','index2','index3','index4','index5','index6','index7','index8','index9','reporte','reporte2','eliminar','Anadirdano','Anadirubicacion'],
+    'Reportemantenimiento'=> ['index2','index3','index4','index5','index6','reporte','eliminar','actualizar'],
     'Usuario'=> ['index','index2','mostrar','add','eliminar'],
     'Logout'=> ['logout']
 );
@@ -34,8 +36,14 @@ function call($controller, $action)
         case 'Secretaria':
             $controller = new SecretariaController();
             break;
+        case 'Mantenimiento':
+            $controller = new MantenimientoController();
+            break;
         case 'Reporte':
             $controller = new ReporteController();
+            break;
+        case 'Reportemantenimiento':
+            $controller = new ReportemantenimientoController();
             break;
         case 'Usuario':
             $controller = new UsuarioController();

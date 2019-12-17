@@ -21,13 +21,14 @@
                     <th>Cedula</th>
                     <th>Descripción del daño</th>
                     <th>Tipo de daño</th>
-                    <th>Opción</th>
+                    <th>Lugar</th>
                     <th>Observaciones de mantenimiento</th>
                     <th>Fecha de inspección</th>
-                    <th>Lugar</th>
+                    <th>Eliminar</th>
+                    <th>Actualizar</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> 
             <?php
             foreach ($datos as $dato) { ?> 
                     <tr>
@@ -41,9 +42,13 @@
                         <td><?php echo $dato["Lugar"] ?></td>
                         <td><?php echo $dato["Observacion"] ?></td>
                         <td><?php echo $dato["Fecha_de_inspeccion"] ?></td>
-                        <form action="?controller=Reporte&&action=eliminar" method="POST">
+                        <form action="?controller=Reportemantenimiento&&action=eliminar" method="POST">
                         <input type="hidden" name="idReportes_de_dano" value=<?php echo $dato["idReportes_de_dano"]?> >
                         <td><button type='submit' class="btn btn-outline-dark"><img type="image" src="/Imagenes/trashcan.png" width="25px" height="25px"/></button></td>
+                        </form>
+                        <form action="?controller=Reportemantenimiento&&action=index5" method="POST">
+                        <input type="hidden" name="idReportes_de_dano" value=<?php echo $dato["idReportes_de_dano"]?> >
+                        <td><button type='submit' class="btn btn-outline-dark"><img type="image" src="/Imagenes/actualizar.png" width="25px" height="25px"/></button></td>
                         </form>
                     </tr>
             <?php }
@@ -54,7 +59,7 @@
         <div class="col-lg-12">
         <div class="form-group row ">
         <div class="col-md-8">
-        <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Secretaria&&action=index'">Regresar</button>
+        <button type="button" class="btn btn-outline-dark" onclick="location.href='?controller=Mantenimiento&&action=index'">Regresar</button>
         </div>
         </div>
         </div>

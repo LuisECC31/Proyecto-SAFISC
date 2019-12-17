@@ -85,12 +85,28 @@ class ReporteModel {
     }
 
     public function listar(){
-        $consulta = $this->db->query("SELECT idReportes_de_dano,Solicitante,Cedula,Descripcion_del_dano,Tipo_de_Dano,Lugar FROM Reportes_de_dano;");
+        $consulta = $this->db->query("SELECT idReportes_de_dano,Fecha_de_solicitud,Solicitante,Cedula,Descripcion_del_dano,Tipo_de_Dano,Lugar,Observacion,Fecha_de_inspeccion FROM Reportes_de_dano;");
         while($filas = $consulta->fetch_assoc()){
             $this->Mostrar[] = $filas;
         }
         return $this->Mostrar;
     }
+
+    public function actualizar($delete_Reporte_id,$Observacion,$Fecha_de_inspeccion){
+        $consulta = $this->db->query("UPDATE Reportes_de_dano
+                                      SET Observacion='$Observacion', Fecha_de_inspeccion='$Fecha_de_inspeccion'
+                                      WHERE idReportes_de_dano='$delete_Reporte_id';");                                
+       $result = $consulta; 
+       if($result === TRUE)	
+           {
+               return $datos = TRUE;
+           }
+        else
+           {
+               return $datos = FALSE;
+           }
+    }
+
 }
 
 

@@ -23,14 +23,22 @@ class LoginController{
             $LoginUser= new LoginConsultaModel();
             $datos = $LoginUser->login($Usuario,$password);
 
-            if($datos>0){
+
+            if($datos == "secretaria_administrativa" ){
                 $_SESSION['valida'] = TRUE;
                 header("location:?controller=Secretaria&&action=index");
                 die();
                 
             }
+
+            if($datos == "Mantenimiento"){
+                $_SESSION['valida'] = TRUE;
+                header("location:?controller=Mantenimiento&&action=index");
+                die();
+                
+            }
             else{
-                header("location:/Views/Home/index.php");
+                header("location:?controller=Home&&action=index");
                 }
         
         

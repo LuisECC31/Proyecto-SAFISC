@@ -21,34 +21,14 @@
                                 <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gestión de Reportes</a>
                                 <ul class="collapse list-unstyled" id="homeSubmenu">
                                     <li>
-                                        <a href='?controller=Reporte&&action=index4'> Crear Reporte</a>
+                                        <a href='?controller=Reportemantenimiento&&action=index4'> Crear Reporte</a>
                                     </li>
                                     <li>
-                                        <a href='/?controller=Reporte&&action=index2'> Ver Reportes</a>
+                                        <a href='/?controller=Reportemantenimiento&&action=index2'> Ver Reportes</a>
                                     </li>
                                     
-                                    <li>
-                                        <a href='?controller=Reporte&&action=index6'> Añadir tipos de daño</a>
-                                    </li>
-                                    <li>
-                                        <a href='/?controller=Reporte&&action=index7'> Añadir Ubicación</a>
-                                    </li>
                                 </ul>
                             </li>
-
-                    
-                            <li class="active">
-                                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Usuarios</a>
-                                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                                        <li>
-                                            <a href='/?controller=Usuario&&action=index'>Ver Usuarios</a>
-                                        </li>
-                                        <li>
-                                            <a href='/?controller=Usuario&&action=index2'>Añadir Usuarios</a>
-                                        </li>
-                                    </ul>
-                            </li>
-                    
 
                             <li class="active">
                                 <a href='/?controller=Logout&&action=logout'>Cerrar Sesión</a>
@@ -69,7 +49,7 @@
             <br><br>
             <div class="card-header col-md-12 " >
             
-              <img src="Imagenes/secretaria.jpeg" class="rounded " >
+              <img src="Imagenes/mantenimiento.jpeg" class="rounded " >
 
              <h2 >Bienvenido a SAFISC</h2> </div>
            

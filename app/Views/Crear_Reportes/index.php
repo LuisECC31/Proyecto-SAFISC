@@ -35,7 +35,7 @@
                     <td><textarea type="text" class="form-control form-control-sm"  name="Descripcion_del_dano" cols="40" rows="5"  value="" size="30" placeholder="Descripción" required></textarea></td>
                     </div></div>
                     <div class="form-group row">
-                    <label for="Descripcion_del_dano" class="col-md-3 col-form-label">Tipo del daño:</label>
+                    <label for="Tipo_de_Dano" class="col-md-3 col-form-label">Tipo del daño:</label>
                     <div class="col-md-8">
                     <select name="Tipo_de_Dano" class="form-control form-control-sm"  class="form-control form-control-sm">
                         <?php 
@@ -50,7 +50,7 @@
                     </select>
                     </div></div>
                     <div class="form-group row">
-                    <label for="Descripcion_del_dano" class="col-md-3 col-form-label">Ubicación:</label>
+                    <label for="Lugar" class="col-md-3 col-form-label">Ubicación:</label>
                     <div class="col-md-8">
                     <select name="Lugar" class="form-control form-control-sm">
                         <?php 

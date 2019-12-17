@@ -14,6 +14,11 @@ class SecretariaController
 		
 		require_once('Views/Home_Secretaria/index.php');
 	}
+
+	function index2(){
+		
+		require_once('Views/Home_Secretaria/Asistencia/index.php');
+	}
 }
 
 ?>

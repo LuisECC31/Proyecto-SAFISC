@@ -3,8 +3,8 @@
 $controllers = array(
     'Home' => ['index'],
     'Login' => ['index','login'],
-    'Secretaria' => ['index'],
-    'Mantenimiento' => ['index'],
+    'Secretaria' => ['index','index2'],
+    'Mantenimiento' => ['index','index2'],
     'Reporte'=> ['index','index2','index3','index4','index5','index6','index7','index8','index9','reporte','reporte2','eliminar','Anadirdano','Anadirubicacion'],
     'Reportemantenimiento'=> ['index2','index3','index4','index5','index6','reporte','eliminar','actualizar'],
     'Usuario'=> ['index','index2','mostrar','add','eliminar'],

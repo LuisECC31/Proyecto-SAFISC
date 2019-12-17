@@ -35,7 +35,7 @@
                             </li>
                         
                             <li class="active">
-                                <a href="#">Contacto para asistencia</a>
+                                <a href="/?controller=Mantenimiento&&action=index2">Contacto para asistencia</a>
                             </li>
                     </ul>
                     
